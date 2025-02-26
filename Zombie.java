@@ -12,9 +12,17 @@ public class Zombie extends Monster
         return "The victim has been bitten. They may soon be infected.";
     }
 
-    public String infect()
+    public String bite(String victimName)
     {
-        Monster friend = new Zombie("friend");
-        return "Friend has been infected.";
+        int infectNum = (int)(Math.random()*2);
+
+        if(infectNum == 0)
+        {
+            Zombie victimBitten = new Zombie(victimName);
+            return "" + victimName + " has been infected. " + victimName + " is now a zombie.";
+        }
+        else
+            return "" + victimName + " is safe for now.";
+
     }
 }

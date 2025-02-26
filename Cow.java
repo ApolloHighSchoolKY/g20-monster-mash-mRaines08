@@ -13,11 +13,17 @@
 
 public class Cow extends Animal
 {
+    int weight;
 
     public Cow()
     {
-
+        super(0, true, "moo");
+        weight = age * 10;;
     }
 
-
+    public int weigh()
+    {
+        weight = age * 10;;
+        return weight;
+    }
 }

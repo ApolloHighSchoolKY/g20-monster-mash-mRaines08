@@ -12,10 +12,10 @@ public class Monster
   }
 
   public String kill(){
-    return myName + " killed a victim.  Screams were heard.\n";
+    return myName + " killed a victim.  Screams were heard.";
   }
 
   public String toString() {
-     return "Monster name :: " + myName + "\n";
+     return "Monster name :: " + myName;
   }
 }

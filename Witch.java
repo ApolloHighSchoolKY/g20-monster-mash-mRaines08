@@ -12,4 +12,12 @@ public class Witch extends Monster
         return "The victim was tured into a toad. Ribbit ribbit.";
     }
     
+    public String toString()
+    {
+        String output = "";
+
+        output = "Bubble, bubble, boil and trouble.";
+
+        return output;
+    }
 }
